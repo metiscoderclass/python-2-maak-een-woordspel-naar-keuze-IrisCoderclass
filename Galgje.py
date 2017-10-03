@@ -1,15 +1,18 @@
 while True:
     print("Welkom bij galgje, probeer het woord te raden, als je wil stoppen typ QQ, als je het woord wil raden typ ?.")
-    W = "CSharp"
+    W = "csharp"
     G = 0
     L = input("Geef een letter")
+    GWO = "------"
     if (L == "?"):
         GW = input("Wat denk je dat het woord is?")
-        if (GW == "CSharp" or "csharp" or "Csharp" or "cSharp" or "CSHARP") :
+        GW = GW.lower()
+        if (GW == W) :
             print("Goed geraden!")
             break
-        if not (GW == "CSharp" or "csharp" or "Csharp" or "cSharp" or "CSHARP") :
+        else:
             print("Sorry, dat was fout.")
+            G = G + 1
     elif not L.isalpha():
         print("ERROR: Je mag alleen letters invoeren")
     if (L == "QQ"):
