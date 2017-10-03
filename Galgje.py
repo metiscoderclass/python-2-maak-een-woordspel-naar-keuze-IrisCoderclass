@@ -18,5 +18,9 @@ while True:
     if (L == "QQ"):
         print("Doei")
         break
+    if (G == 5):
+        print("Sorry je hebt verloren, het woord was CSharp")
+        break
+
 
 
