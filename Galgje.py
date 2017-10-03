@@ -8,12 +8,12 @@ while True:
         if (GW == "CSharp" or "csharp" or "Csharp" or "cSharp" or "CSHARP") :
             print("Goed geraden!")
             break
-        else:
+        if not (GW == "CSharp" or "csharp" or "Csharp" or "cSharp" or "CSHARP") :
             print("Sorry, dat was fout.")
-    elif (L == "QQ"):
-        print("Doei")
-        break
     elif not L.isalpha():
         print("ERROR: Je mag alleen letters invoeren")
+    if (L == "QQ"):
+        print("Doei")
+        break
 
 
