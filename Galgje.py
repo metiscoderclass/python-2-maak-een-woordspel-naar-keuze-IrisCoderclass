@@ -10,6 +10,9 @@ while True:
             break
         else:
             print("Sorry, dat was fout.")
+    elif (L = "QQ"):
+        print("Doei")
+        break
     elif not L.isalpha():
         print("ERROR: Je mag alleen letters invoeren")
 
