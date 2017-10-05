@@ -17,6 +17,9 @@ while True:
             else:
                 print("Sorry, dat was fout.")
                 G = G + 1
+    if not (L == "c" or "s" or "h" or "a" or "r" or "p"):
+        print("Dat was fout")
+        G = G + 1
     if (L == "?"):
         GW = input("Wat denk je dat het woord is?")
         GW = GW.lower()
