@@ -3,7 +3,20 @@ while True:
     W = "csharp"
     G = 0
     L = input("Geef een letter")
-    GWO = "------"
+    L = L.lower()
+
+    if (L == "c" or "s" or "h" or "a" or "r" or "p"):
+        GL = GL + L
+        AGL = len(GL)
+        if (AGL == 6):
+            GWL = input("Wat denk je dat het woord is?")
+            GWL = GWL.lower()
+            if (GWL == W):
+                print("Goed geraden!")
+                break
+            else:
+                print("Sorry, dat was fout.")
+                G = G + 1
     if (L == "?"):
         GW = input("Wat denk je dat het woord is?")
         GW = GW.lower()
