@@ -1,8 +1,8 @@
 GL = ""
 FL = ""
-W = "metis"
+W = "banaan"
 G = 0
-AL = len(W)
+AL= len(W)
 
 while True:
     print("Welkom bij galgje, probeer het woord te raden, als je wil stoppen typ QQ, als je het woord wil raden typ ?.")
