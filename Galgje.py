@@ -5,7 +5,7 @@ G = 0
 AL = len(W)
 
 while True:
-    print("Welkom bij galgje, probeer het woord te raden, als je wil stoppen typ qq, als je het woord wil raden typ ?.")
+    print("Welkom bij galgje, probeer het woord te raden, als je wil stoppen typ QQ, als je het woord wil raden typ ?.")
     L = input("Geef een letter")
     L = L.lower()
     LL = len(L)
