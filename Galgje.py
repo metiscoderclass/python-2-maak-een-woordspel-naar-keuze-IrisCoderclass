@@ -1,8 +1,19 @@
 GL = ""
 FL = ""
-W = "banaan"
+W = "csharp"
 G = 0
 AL = len(W)
+WRGL = ""
+
+def printtussenstand():
+    global WRGL
+    WRGL = ""
+    for L in W:
+        if L in GL:
+            WRGL = WRGL + L
+        else:
+            WRGL = WRGL + "_"
+    print(WRGL)
 
 while True:
     print("Welkom bij galgje, probeer het woord te raden, als je wil stoppen typ QQ, als je het woord wil raden typ ?.")
@@ -28,7 +39,7 @@ while True:
             G = G + 1
             print("Je goed geraden letters zijn: " + GL)
             print("Je fout geraden letters zijn: " + FL)
-
+            printtussenstand()
     elif not L.isalpha():
         print("ERROR: Je mag alleen letters invoeren")
 
@@ -40,19 +51,10 @@ while True:
 
     elif L in W:
         GL = GL + L
-        AGL = len(GL)
         print("Je goed geraden letters zijn: " + GL)
         print("Je fout geraden letters zijn: " + FL)
-        if (AGL == AL):
-            GWL = input("Wat denk je dat het woord is?")
-            GWL = GWL.lower()
-            if (GWL == W):
-                print("Goed geraden!")
-                break
-            else:
-                print("Sorry, dat was fout.")
-                G = G + 1
-                print("Je goed geraden letters zijn: " + GL)
+        printtussenstand()
+
 
     else:
         print("Dat was fout")
@@ -60,7 +62,11 @@ while True:
         FL = FL + L
         print("Je goed geraden letters zijn: " + GL)
         print("Je fout geraden letters zijn: " + FL)
+        printtussenstand()
 
     if (G == 5):
         print("Sorry je hebt verloren, het woord was " + W)
+        break
+    if (WRGL == W):
+        print("Je hebt gewonnen, het woord was " + W)
         break
