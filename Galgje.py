@@ -1,6 +1,8 @@
+import random
 GL = ""
 FL = ""
-W = "csharp"
+woordenlijst = ["csharp", "banaan","unity", "minecraft", "overwatch", "japan", "anime", "laptop", "metis", "nintendo", "apple"]
+W = random.choice(woordenlijst)
 G = 0
 AL = len(W)
 WRGL = ""
@@ -16,7 +18,7 @@ def printtussenstand():
     print(WRGL)
 
 while True:
-    print("Welkom bij galgje, probeer het woord te raden, als je wil stoppen typ QQ, als je het woord wil raden typ ?.")
+    print("Welkom bij galgje, probeer het woord te raden, als je wil stoppen typ QQ, als je het woord wil raden typ ?.(the word can be a programming language or a brand or game name, so watch out)")
     L = input("Geef een letter")
     L = L.lower()
     LL = len(L)
