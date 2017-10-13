@@ -66,9 +66,60 @@ while True:
         print("Je fout geraden letters zijn: " + FL)
         printtussenstand()
 
+
     if (G == 5):
         print("Sorry je hebt verloren, het woord was " + W)
+        print("__________  ")
+        print("|/       |  ")
+        print("|       ( ) ")
+        print("|       /|\ ")
+        print("|       / \ ")
+        print("|           ")
+        print("|           ")
+        print("|           ")
+        print("| ____      ")
         break
+    elif(G == 4):
+        print("__________  ")
+        print("|/          ")
+        print("|           ")
+        print("|           ")
+        print("|           ")
+        print("|           ")
+        print("|           ")
+        print("|           ")
+        print("| ____      ")
+    elif(G == 3):
+        print("            ")
+        print("|/          ")
+        print("|           ")
+        print("|           ")
+        print("|           ")
+        print("|           ")
+        print("|           ")
+        print("|           ")
+        print("| ____      ")
+    elif(G == 2):
+        print("            ")
+        print("|           ")
+        print("|           ")
+        print("|           ")
+        print("|           ")
+        print("|           ")
+        print("|           ")
+        print("|           ")
+        print("| ____      ")
+    elif(G == 1):
+        print("            ")
+        print("            ")
+        print("            ")
+        print("            ")
+        print("            ")
+        print("            ")
+        print("            ")
+        print("            ")
+        print(" ____       ")
+
     if (WRGL == W):
         print("Je hebt gewonnen, het woord was " + W)
         break
